@@ -30,7 +30,30 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
   
+
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+  ${data.screenshot}
+
+  ## Contributions
+  ${data.contributions}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  ${data.questions}
+  If you would like to reach me email me at ${data.email} and check out my github ${data.github}.
+
+  ${renderLicenseSection(data.license)}
 `;
 }
 
