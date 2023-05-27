@@ -46,7 +46,7 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  ${data.usage}
+  ${data.usage}\n
   ${data.screenshot}
 
   ## Contributions

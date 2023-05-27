@@ -2,9 +2,6 @@ const fs = require('fs')
 const inquirer = require('inquirer');
 const path = require('path');
 const generateMarkdown = require('./generateMarkdown');
-// TODO: Create an array of questions for user input
-
-//THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 const questions = [
     {
@@ -75,5 +72,4 @@ function init() {
     })
 }
 
-// Function call to initialize app
 init();
