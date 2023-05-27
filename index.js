@@ -64,3 +64,16 @@ const questions = [
         name: 'questions',
     },
 ];
+
+function writeToFile(file, data) {
+    fs.writeFileSync(path.join(process.cwd(), file), data)
+}
+
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile('README.md', generateMarkdown({ ...answers }))
+    })
+}
+
+// Function call to initialize app
+init();
